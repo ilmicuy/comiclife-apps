@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Quicksand:wght@500;700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Comic-Neue", cursive;
+  margin: 0;
+  padding: 0;
+}
+header {
+  display: inline;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #00a2c6d1;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 5px;
+  position: sticky;
+  top: 0;
+}
+nav ul {
+  padding-inline: 4rem;
+  display: flex;
+  gap: 2rem;
+}
+nav li {
+  list-style-type: none;
+}
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #ffffff;
+}
+nav a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+  text-decoration: underline 5px;
+  text-underline-offset: 10px;
+}
+nav .logo {
+  height: 4rem;
+}
+.jumbotron {
+  display: flex;
+  justify-content: center;
+  object-fit: cover;
+  background-image: url("../image/jumbotron.jpg");
+  width: 100%;
+  max-height: 60vh;
+}
+.text {
+  font-size: 50px;
+  text-align: center;
+  background-color: #ffffff;
+}
+nav h1 {
+  font-size: large;
+}
+.first {
+  color: rgba(17, 101, 218, 0.829);
+  position: relative;
+}
+.second {
+  color: rgba(224, 59, 14, 0.764);
+  position: relative;
+}
+main {
+  padding: 20px;
+  display: flex;
+  gap: 1.5rem;
+  background-image: url("../image/background.jpg");
+  margin-top: 10px;
+}
+h2,
+h3 {
+  color: #da570cda;
+}
+main article {
+  text-align: justify;
+}
+aside {
+  flex: 1;
+}
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #00a2c6;
+  text-align: center;
+  font-weight: bold;
+}
+#content {
+  flex: 5;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1.5rem;
+}
+.profile header {
+  text-align: center;
+}
+.featured-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+.profile img {
+  border-radius: 50%;
+  width: 100%;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #fffffff8;
+}
+.image {
+  border-radius: 5px;
+  width: 19%;
+  object-fit: fill;
+  padding: 5px;
+}
+aside h2 {
+  text-align: center;
+  font-weight: bolder;
+}
+.socmed {
+  display: flex;
+  list-style-type: none;
+}
+.socmed a {
+  text-decoration: none;
+  padding: 10px;
+  color: rgba(17, 101, 218, 0.829);
+}
+.socmed li {
+  padding: 10px;
+  font-size: larger;
+  font-weight: bolder;
+}
+.socmed a:hover {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  color: #da570cda;
+}
+
+@media screen and (max-width: 1000px) {
+  main {
+    flex-flow: column nowrap;
+  }
+  main aside {
+    align-self: center;
+  }
+}
